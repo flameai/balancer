@@ -12,7 +12,7 @@ from utils import get_server_name, get_video_location
 load_dotenv()
 
 REDIS_COUNT_TO_CDN_KEY = "count"
-MAX_COUNT_TO_CDN = 9
+MAX_COUNT_TO_CDN = 9  # every time after this will be called origin server
 CDN_HOST = os.getenv("CDN_HOST")
 
 redis_client = redis.Redis().from_url(os.getenv("REDIS"))

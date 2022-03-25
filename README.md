@@ -54,7 +54,20 @@ Now you can try to send requests to http://127.0.0.1/?video=http://server_number
 
 ## Tests
 
+### Unit tests
 Be sure that all parts work all right with command:
 ```bash
 pytest
+```
+
+### e2e tests
+
+First 
+```
+docker-compose up
+```
+And then
+
+```
+pytest e2e_tests.py
 ```
